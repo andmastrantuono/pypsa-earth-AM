@@ -1,0 +1,84 @@
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+	0[label = "solve_all_networks", color = "0.54 0.6 0.85", style="rounded"];
+	1[label = "solve_network", color = "0.42 0.6 0.85", style="rounded"];
+	2[label = "prepare_network\nll: copt\nopts: Co2L-4H", color = "0.17 0.6 0.85", style="rounded"];
+	3[label = "add_extra_components", color = "0.65 0.6 0.85", style="rounded"];
+	4[label = "cluster_network\nclusters: 6", color = "0.28 0.6 0.85", style="rounded"];
+	5[label = "simplify_network\nsimpl: ", color = "0.22 0.6 0.85", style="rounded"];
+	6[label = "add_electricity", color = "0.05 0.6 0.85", style="rounded"];
+	7[label = "build_renewable_profiles\ntechnology: onwind", color = "0.11 0.6 0.85", style="rounded"];
+	8[label = "build_natura_raster", color = "0.04 0.6 0.85", style="rounded,dashed"];
+	9[label = "build_shapes", color = "0.48 0.6 0.85", style="rounded"];
+	10[label = "build_powerplants", color = "0.16 0.6 0.85", style="rounded"];
+	11[label = "base_network", color = "0.47 0.6 0.85", style="rounded"];
+	12[label = "build_osm_network", color = "0.44 0.6 0.85", style="rounded"];
+	13[label = "clean_osm_data", color = "0.49 0.6 0.85", style="rounded"];
+	14[label = "download_osm_data", color = "0.20 0.6 0.85", style="rounded"];
+	15[label = "build_bus_regions", color = "0.26 0.6 0.85", style="rounded"];
+	16[label = "build_renewable_profiles\ntechnology: offwind-ac", color = "0.11 0.6 0.85", style="rounded"];
+	17[label = "build_renewable_profiles\ntechnology: offwind-dc", color = "0.11 0.6 0.85", style="rounded"];
+	18[label = "build_renewable_profiles\ntechnology: solar", color = "0.11 0.6 0.85", style="rounded"];
+	19[label = "build_renewable_profiles\ntechnology: hydro", color = "0.11 0.6 0.85", style="rounded"];
+	20[label = "retrieve_cost_data\nyear: 2030", color = "0.24 0.6 0.85", style="rounded,dashed"];
+	21[label = "build_demand_profiles", color = "0.13 0.6 0.85", style="rounded"];
+	1 -> 0
+	2 -> 1
+	3 -> 2
+	20 -> 2
+	4 -> 3
+	20 -> 3
+	5 -> 4
+	9 -> 4
+	20 -> 4
+	6 -> 5
+	20 -> 5
+	15 -> 5
+	9 -> 5
+	7 -> 6
+	16 -> 6
+	17 -> 6
+	18 -> 6
+	19 -> 6
+	11 -> 6
+	20 -> 6
+	10 -> 6
+	9 -> 6
+	21 -> 6
+	8 -> 7
+	9 -> 7
+	10 -> 7
+	15 -> 7
+	11 -> 10
+	13 -> 10
+	9 -> 10
+	12 -> 11
+	9 -> 11
+	13 -> 12
+	9 -> 12
+	14 -> 13
+	9 -> 13
+	9 -> 15
+	11 -> 15
+	8 -> 16
+	9 -> 16
+	10 -> 16
+	15 -> 16
+	8 -> 17
+	9 -> 17
+	10 -> 17
+	15 -> 17
+	8 -> 18
+	9 -> 18
+	10 -> 18
+	15 -> 18
+	8 -> 19
+	9 -> 19
+	10 -> 19
+	15 -> 19
+	11 -> 21
+	15 -> 21
+	9 -> 21
+}            

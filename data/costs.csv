@@ -9,7 +9,6 @@ PHS,2030,lifetime,80,years,IEA2010,,
 hydro,2030,lifetime,80,years,IEA2010,,
 ror,2030,lifetime,80,years,IEA2010,,
 OCGT,2030,lifetime,30,years,IEA2010,,
-nuclear,2030,lifetime,45,years,ECF2010 in DIW DataDoc http://hdl.handle.net/10419/80348,,
 CCGT,2030,lifetime,30,years,IEA2010,,
 coal,2030,lifetime,40,years,IEA2010,,
 lignite,2030,lifetime,40,years,IEA2010,,
@@ -35,7 +34,6 @@ PHS,2030,investment,2000,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,
 hydro,2030,investment,2000,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 ror,2030,investment,3000,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 OCGT,2030,investment,400,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
-nuclear,2030,investment,6000,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 CCGT,2030,investment,800,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 oil,2030,investment,400,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 onwind,2030,FOM,2.450549,%/year,DEA https://ens.dk/en/our-services/projections-and-models/technology-data,,2013
@@ -60,11 +58,9 @@ coal,2030,VOM,6,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348 PC (Adva
 lignite,2030,VOM,7,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 CCGT,2030,VOM,4,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 OCGT,2030,VOM,3,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
-nuclear,2030,VOM,8,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 gas,2030,fuel,21.6,EUR/MWhth,IEA2011b,,2013
 uranium,2030,fuel,3,EUR/MWhth,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
 oil,2030,VOM,3,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
-nuclear,2030,fuel,3,EUR/MWhth,IEA2011b,,2013
 biomass,2030,fuel,7,EUR/MWhth,IEA2011b,,2013
 coal,2030,fuel,8.4,EUR/MWhth,IEA2011b,,2013
 lignite,2030,fuel,2.9,EUR/MWhth,IEA2011b,,2013
@@ -76,7 +72,6 @@ OCGT,2030,efficiency,0.39,per unit,DIW DataDoc http://hdl.handle.net/10419/80348
 CCGT,2030,efficiency,0.5,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
 biomass,2030,efficiency,0.468,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
 geothermal,2030,efficiency,0.239,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
-nuclear,2030,efficiency,0.337,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
 gas,2030,CO2 intensity,0.187,tCO2/MWth,https://www.eia.gov/environment/emissions/co2_vol_mass.php,,
 coal,2030,efficiency,0.464,per unit,DIW DataDoc http://hdl.handle.net/10419/80348 PC (Advanced/SuperC),,
 lignite,2030,efficiency,0.447,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
@@ -194,7 +189,7 @@ HVDC inverter pair,2030,investment,150000,EUR/MW,Hagspiel,,2013
 HVDC inverter pair,2030,lifetime,40,years,Hagspiel,,
 HVDC inverter pair,2030,FOM,2,%/year,Hagspiel,,2013
 csp-tower,2030,FOM,1.1,%/year,ATB CSP data (https://atb.nrel.gov/electricity/2021/concentrating_solar_power),,2013
-csp-tower,2030,investment,108.37,"EUR/kW_th,dp",ATB CSP data (https://atb.nrel.gov/electricity/2021/concentrating_solar_power) and NREL SAM v2021.12.2 (https://sam.nrel.gov/).,,2013
+"csp-tower,2030,investment,108.37,""EUR/kW_th,dp"",ATB CSP data (https://atb.nrel.gov/electricity/2021/concentrating_solar_power) and NREL SAM v2021.12.2 (https://sam.nrel.gov/).,,2013"
 csp-tower,2030,lifetime,30,years,ATB CSP data (https://atb.nrel.gov/electricity/2021/concentrating_solar_power),,
 csp-tower TES,2030,FOM,1.1,%/year,see solar-tower.,,2013
 csp-tower TES,2030,investment,14.52,EUR/kWh_th,ATB CSP data (https://atb.nrel.gov/electricity/2021/concentrating_solar_power) and NREL SAM v2021.12.2 (https://sam.nrel.gov/).,,2013
@@ -202,3 +197,13 @@ csp-tower TES,2030,lifetime,30,years,see solar-tower.,,
 csp-tower power block,2030,FOM,1.1,%/year,see solar-tower.,,2013
 csp-tower power block,2030,investment,759.17,EUR/kW_e,ATB CSP data (https://atb.nrel.gov/electricity/2021/concentrating_solar_power) and NREL SAM v2021.12.2 (https://sam.nrel.gov/).,,2013
 csp-tower power block,2030,lifetime,30,years,see solar-tower.,,
+nuclear_lr,2030,lifetime,60,years,ECF2010 in DIW DataDoc http://hdl.handle.net/10419/80348,,
+nuclear_lr,2030,investment,6000,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
+nuclear_lr,2030,VOM,8,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
+nuclear_lr,2030,fuel,3,EUR/MWhth,IEA2011b,,2013
+nuclear_lr,2030,efficiency,0.337,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
+nuclear_smr,2030,lifetime,60,years,ECF2010 in DIW DataDoc http://hdl.handle.net/10419/80348,,
+nuclear_smr,2030,investment,6500,EUR/kWel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
+nuclear_smr,2030,VOM,8,EUR/MWhel,DIW DataDoc http://hdl.handle.net/10419/80348,,2013
+nuclear_smr,2030,fuel,3,EUR/MWhth,IEA2011b,,2013
+nuclear_smr,2030,efficiency,0.337,per unit,DIW DataDoc http://hdl.handle.net/10419/80348,,
